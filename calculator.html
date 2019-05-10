@@ -5,13 +5,6 @@
     <title>Калькулятор</title>
     <style>
 
-
-      button:active {
-        background-color: #3e8e41;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-      }
-
       div {
         display: flex;
         justify-content: center;
@@ -27,6 +20,16 @@
         box-shadow: 0px 5px rgba(64, 60, 60, 0.82);
       }
 
+      button:hover {
+        background: blue;
+      }
+
+      button:active {
+        background: rgb(200, 255, 248);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
       #answer {
         width: auto; display: inline-block;
         font-size: 40px;
@@ -37,14 +40,6 @@
         border: 3px solid black;
         box-shadow: 10px -1px rgba(64, 60, 60, 0.82);
         margin-bottom: 50px
-      }
-
-      button:hover {
-        background: white;
-      }
-
-      button:active {
-        background: rgb(200, 255, 248);
       }
 
       body {
@@ -96,7 +91,7 @@
 
   <body>
     <div id="div1">
-      <a href="main.html"><button id="button12" style="position-fixed; top:100px left:100px;" >< Назад</button><a>
+      <a href="main.html"><button id="button12" style="position-fixed; top:100px left:100px;">< Назад</button><a>
       <div>
         <p style="color: white; text-align: center;">Введите пример: <input type="text"></p>
       </div>
@@ -109,10 +104,8 @@
     <script>
       function getAnswer() {
         var value = document.getElementsByTagName('input')[0].value;
-        document.getElementById('answer').innerHTML = 'Ответ: ' + eval(value);
+        document.getElementById('answer').innerHTML = 'Ответ: ' + eval(value) * 10000000000 / 10000000000;
       }
     </script>
   </body>
-
-
 </html>

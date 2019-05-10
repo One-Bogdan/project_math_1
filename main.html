@@ -3,13 +3,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Start page</title>
+    <title>Главная страница</title>
     <style>
 
-      button:active {
-        background-color: #3e8e41;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
+      body {
+        background: #037e2e url("10_02.jpg") no-repeat;
       }
 
       div {
@@ -33,9 +31,10 @@
         color: white
       }
 
-
-      body {
-        background: #037e2e url("10_02.jpg") no-repeat; 
+      button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
       }
 
       #b1 {
@@ -43,11 +42,11 @@
       }
 
       #b2 {
-        background: rgb(5, 154, 20);
+        background: rgb(204, 0, 0);
       }
 
       #b3 {
-        background: rgb(204, 0, 0);
+        background: rgb(5, 154, 20);
       }
 
       #b1:hover, #b2:hover, #b3:hover {
@@ -59,7 +58,7 @@
   <body>
     <div >
       <p><a href="calculator.html"><button id="b1">Калькулятор</button></a></p>
-      <p><a href="integer_equation.html"><button id="b2">Простое уравнение</button></a></p>
+      <p><a href="integer_equation.html"><button id="b2">Целочисленное уравнение</button></a></p>
       <p><a href="decimal_equation.html"><button id="b3">Десятичное уравнение</button></a></p>
     </div>
     <script>
